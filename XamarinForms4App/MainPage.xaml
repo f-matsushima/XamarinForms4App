@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:local="clr-namespace:XamarinForms4App" 
+       x:Class="XamarinForms4App.MainPage">
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ShellItem">
+                <Setter Property="Shell.ShellBackgroundColor" Value="#2196F3" />
+                <Setter Property="Shell.ShellForegroundColor" Value="White" />
+                <Setter Property="Shell.ShellTitleColor" Value="White" />
+                <Setter Property="Shell.ShellDisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.ShellUnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.ShellTabBarBackgroundColor" Value="#2196F3" />
+                <Setter Property="Shell.ShellTabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.ShellTabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.ShellTabBarTitleColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+    <ShellItem Title="Visual">
+        <ShellSection Title="Material"> 
+            <ShellContent>
+                <local:MaterialPage/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection  Title="Normal">
+            <ShellContent>
+                <local:NormalPage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+    <ShellItem Title="CollectionView">
+        <ShellContent>
+            <local:CollectionViewPage/>
+        </ShellContent>
+    </ShellItem>
+</Shell>
